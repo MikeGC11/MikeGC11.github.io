@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo siento</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #e91e63;
+        }
+
+        .message {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+            text-align: justify;
+            max-width: 600px;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: right;
+        }
+
+        .hearts-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .hearts-background span {
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url('https://cdn-icons-png.flaticon.com/512/2107/2107845.png') no-repeat center center;
+            background-size: contain;
+            animation: float 5s infinite ease-in-out;
+            bottom: -100px;
+            opacity: 0.8;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-150vh) rotate(720deg);
+            }
+        }
+
+        span:nth-child(odd) {
+            animation-duration: 3s;
+        }
+
+        span:nth-child(even) {
+            animation-duration: 6s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para Jocelyn</h1>
+
+    <div class="message">
+        <p>Sé que estás molesta, triste o decepcionada.</p>
+        <p>Créeme que estoy decepcionado por mi comportamiento, pero de este error voy a aprender y a mejorar, porque te amo. Si no me di el tiempo de hacerte una carta y dártela, es porque ni siquiera sé si quieres verme, pero al menos sé crear sitios como este para que lo puedas ver.</p>
+        <p>Te amo demasiado Jocelyn y discúlpame por a veces ser así. Yo sé que en una relación no todo es perfecto, pero los momentos que construimos juntos me hacen ver lo bonito de la vida. Gracias por compartir tu vida conmigo, sin más por el momento, que tengas buen día y espero verte pronto.</p>
+
+        <div class="signature">Con cariño, tu novio :)</div>
+    </div>
+
+    <div class="hearts-background">
+        <span style="left: 10%;"></span>
+        <span style="left: 20%; width: 40px; height: 40px;"></span>
+        <span style="left: 25%;"></span>
+        <span style="left: 40%;"></span>
+        <span style="left: 55%;"></span>
+        <span style="left: 70%; width: 40px; height: 40px;"></span>
+        <span style="left: 85%;"></span>
+        <span style="left: 95%; width: 35px; height: 35px;"></span>
+    </div>
+</body>
+</html>
